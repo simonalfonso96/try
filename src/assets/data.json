@@ -1,0 +1,247 @@
+[
+  {
+    "Title": "Kimetsu no Yaiba",
+    "bgImage": "image1.png",
+    "rate": "5.0",
+    "category": [
+      "Adventure fiction",
+      "Dark Fantay",
+      "Martial Arts"
+    ],
+    "summaryOfthemovie": "Demon Slayer: Kimetsu no Yaiba is a Japanese manga series written and illustrated by Koyoharu Gotouge. It follows teenage Tanjiro Kamado, who strives to become a demon slayer after his family was slaughtered and his younger sister Nezuko turned into a demon.",
+    "season": {
+      "Season1":
+      [
+        {
+          "Episode": 1,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 2,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 3,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 4,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 5,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 6,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 7,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 8,
+          "Video": "mp4",
+          "summary": "Sample"
+        }
+      ],
+      "Season2": 
+      [
+        {
+          "Episode": 1,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 2,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 3,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 4,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 5,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 6,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 7,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 8,
+          "Video": "mp4",
+          "summary": "Sample"
+        }
+      ]
+    }
+  },
+
+  {
+    "Title": "Jujutsu Kaisen",
+    "bgImage": "jjk.png",
+    "rate": "5.0",
+    "category": [
+      "Adventure fiction",
+      "Martial Arts"
+    ],
+    "summaryOfthemovie": "Yuuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a friend who has been attacked by Curses, he eats a finger of Ryoumen Sukuna, taking the Curse into his own soul.",
+    "season": {
+      "Season1": 
+      [
+        {
+          "Episode": 1,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 2,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 3,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 4,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 5,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 6,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 7,
+          "Video": "mp4",
+          "summary": "Sample"
+        }
+        ,{
+          "Episode": 8,
+          "Video": "mp4",
+          "summary": "Sample"
+        }
+      ]
+    }
+  },
+
+  {
+    "Title": "Attack On Titan",
+    "bgImage": "AoT.png",
+    "rate": "5.0",
+    "category": [
+      "Adventure fiction",
+      "Dark Fantay",
+      "Martial Arts"
+    ],
+    "summaryOfthemovie": "When man-eating Titans first appeared 100 years ago, humans found safety behind massive walls that stopped the giants in their tracks. But the safety they have had for so long is threatened when a colossal Titan smashes through the barriers, causing a flood of the giants into what had been the human…",
+    "season": {
+      "Season1": 
+      [
+        {
+          "Episode": 1,
+          "Video": "mp4",
+          "summary": "The citizens worry they will be at the Titans' mercy after many years of peace."
+        },
+        {
+          "Episode": 2,
+          "Video": "mp4",
+          "summary": "The Shiganshina citizens are under attack from the Titans."
+        },
+        {
+          "Episode": 3,
+          "Video": "mp4",
+          "summary": "Eren butt heads with Jean Kirschtein, a cadet who wants to be in the Military Police Regiment. Berholt and Reiner help Eren learn during training."
+        },
+        {
+          "Episode": 4,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 5,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 6,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 7,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 8,
+          "Video": "mp4",
+          "summary": "Sample"
+        }
+      ],
+      "Season2": 
+      [
+        {
+          "Episode": 1,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 2,
+          "Video": "mp4", 
+          "summary": "Sample"
+        },
+        {
+          "Episode": 3,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 4,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 5,
+          "Video": "mp4",
+          "summary": "Sample"
+        },
+        {
+          "Episode": 6,
+          "Video": "mp4",
+          "summary": "Sample"
+        }
+      ]
+    }
+  }
+] 

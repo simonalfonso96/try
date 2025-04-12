@@ -1,0 +1,597 @@
+/* Globa Style */
+@font-face {
+    font-family: Avenir LT Std;
+    src: url(../assets/Avenir\ LT\ Std\ 35\ Light.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Outfit", sans-serif;
+    background-color: rgb(25, 25, 25);
+    position: relative;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 150rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.container_row{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+/* Navbar style start */
+nav {
+    align-items: center;
+    background: transparent;
+    display: flex;
+    font-size: 1.7rem;
+    height: 10rem;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    z-index: 200;
+    font-family: "Outfit", sans-serif;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a{
+    position: relative;
+    color: #106580;
+    font-weight: 700;
+    transition: color .4s;
+}
+
+nav ul li a{
+    color: #FFFFFF;
+    font-weight: 200;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "outfit",sans-serif;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #106580;
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    transition: width .3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+nav ul li a:hover{
+    font-weight: 700;
+    font-size: 18px;
+}
+.logo {
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+}
+.nav__toggle,
+.nav__close{
+    display: none;
+}
+
+@media screen and (max-width: 1150px) {
+    .nav__menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        backdrop-filter: blur(16px);
+        width: 100%;
+        height: 100%;
+        transition: right .4s;
+    }
+    .nav__toggle,
+    .nav__close{
+        font-size: 1.5rem;
+        color: #FFFFFF;
+        cursor: pointer;
+        z-index: 1;
+        right: 0;
+        display: block;
+    }
+}
+@media screen and (max-width: 820px) {
+    .nav__menu{
+      width: 55%;
+    }
+    .nav-btn-container{
+        display: grid;
+        gap: 2rem;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 1150px)  {
+    nav ul{
+        display: grid;
+        flex-direction: row;
+        gap: 3rem;
+        justify-items: start;
+        margin-top: 15rem;
+        margin-left: 5rem;
+    }
+}
+
+.show-menu{
+    right: 0;
+}
+/* Navbar style end */
+
+/* Herosection style end */
+
+.hero {
+    height: 980px;
+    position: relative;
+    width: 100%;
+}
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.gradient{
+    height: 100%;
+    width: 45%;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(to right,  rgba(0,0,0,1),
+    rgba(0,0,0,.7) 50%,
+    rgba(0,0,0,.4) 80%,
+    rgba(0,0,0,0)) 100%;
+}
+.gradient1{
+    height: 100%;
+    width: 45%;
+    position: absolute;
+    right: 0;
+    background: linear-gradient(to left,  rgba(0,0,0,1),
+    rgba(0,0,0,.7) 50%,
+    rgba(0,0,0,.4) 80%,
+    rgba(0,0,0,0)) 100%;
+}
+.hero_text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 35rem;
+    max-width: 63rem;
+}
+.hero_text h1{
+    font-family: "Outfit", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    align-items: center;
+    color: #FFFFFF;
+}
+.hero_text p {
+    font-family: "Outfit", sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 12px;
+    
+}
+.hero_rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+}
+.rating{
+    margin-right: 2rem;
+    margin-left: 0.5rem;
+}
+.icon__container{
+    height: 20px;
+    width: 20px;
+}
+.vector{
+    background: url(/src/images/Vector.png);
+    height: 20px;
+    width: 20px;
+}
+.hero_description_container p{
+    margin-top: 2.5rem;
+    font-size: 16px;
+    line-height: 20.16px;
+}
+
+.btn__watchNow{
+    font-family: Avenir LT Std;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #106580;
+    border-radius: 5px;
+    height: 44px;
+    width: 142px;
+    border: none;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.btn__favorite{
+    font-family: Avenir LT Std;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    height: 44px;
+    width: 48px;
+    line-height: 19.2px;
+    cursor: pointer;
+}
+.container__btn{
+    margin-top: 2.5rem;
+}
+
+.hero_bottom_navbar{
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+    bottom: 7em;
+    left: 0;
+    right: 0;
+}
+.hero_bottom_navbar ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.hero_bottom_link{
+    position: relative;
+    color: #106580;
+    font-weight: 700;
+    transition: color .4s;
+}
+.hero_bottom_link::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #106580;
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    transition: width .3s;
+}
+.hero_bottom_link:hover::after {
+    width: 100%;
+}
+
+.hero_bottom_link.active::after {
+    width: 100%;
+}
+
+.hero_bottom_link.active {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.hero_bottom_link{
+    color: #FFFFFF;
+    font-weight: 100;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: font-size, font-weight .4s;
+}
+.hero_bottom_link:hover{
+    font-family: "Outfit",sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.button {
+    background-color: #FFFFFF;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: .6rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s ease width;
+}
+.button:last-child{
+    margin-right: 0;
+}
+.button.active{
+    width: 112px;
+    cursor: auto;
+    background-color: #106580;
+}
+/* Herosection end */
+
+/* List setction start */
+.list{
+    background-color: rgb(25, 25, 25);
+    padding: 7rem 0;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .title-cards{
+    margin-bottom: none;
+} */
+
+.back_btn{
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    width: 50px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    transition: all .5s ease;
+}
+.back_btn:hover {
+    width: 60px;
+    height: 50px;
+    opacity: 1;
+}
+
+.card_container_heading h3{
+    color: #FFFFFF;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42.84px;
+
+}
+.card_container_heading span{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42.84px;
+    color: rgb(251, 201, 74);
+}
+.card_container_heading h2 span{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42.84px;
+    color: rgb(251, 201, 74);
+}
+.card_container_heading{
+    width: 292px;
+    margin-bottom: 3rem;
+}
+.card_list {
+    display: flex;
+    gap: 2rem;
+}
+.card_list .darken_bg {
+    width: 516px;
+    min-height: 291px;
+    border-radius: 21px;
+    height: 100%;
+    background: linear-gradient(to top, 
+    rgba(0,0,0,1),
+    rgba(0,0,0,.7) 50%,
+    rgba(0,0,0,.4),
+    rgba(0,0,0,0));
+    border-radius: 21px;
+    margin-bottom: -1px;
+}
+
+.card_list .card {
+    position: relative;
+    border-radius: 21px;
+    display: block;
+    height: 291px;
+    transition: all .5s ease;
+}
+.card_list .card:hover {
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+ /* when card is active this happen*/
+
+/* All cards visible by default */
+.card_list .display_card {
+    display: block;
+}
+/* Active card style */
+.card_list .active_card {
+    height: 621px;
+    position: relative;
+    left: 0;
+    z-index: 2;
+    display: block;
+}
+/* Hide non-active cards */
+.card_list .inactive_card {
+    display: none;
+}
+/* Active card hover behavior */
+.card_list .active_card:hover {
+    box-shadow: none;
+    cursor: default;
+}
+/* Active text content when the card is clicked */
+.active_text_card {
+    margin-bottom: 3rem;
+}
+/* Back button visible only on the active card */
+.active_back_btn {
+    display: block;
+    opacity: 0.3;
+}
+
+/* Episode and Summary display when card selected */
+.episode_active_container{
+    height: 865px;
+}
+.Episode_container {
+    width: 100%;
+}
+.Episode_container h2{
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30.24px;
+    color: #FFFFFF;
+}
+.Episode_container .season, .season_select{
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30.24px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    padding: 0 1rem;
+}
+.season:a {
+    border: none;
+}
+/* Video style */
+.heading_episode{
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video_container {
+    width: 100%;
+    height: 810px;
+    overflow-y: clip;
+}
+.video_context{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-bottom: 5rem;
+}
+.video {
+    width: 409px;
+    height: 236px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+.video_text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 303px;
+}
+.video_container .video_text_container h3 {
+    height: 100%;
+    align-content: end;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25.2px;
+    color: #FFFFFF;
+    padding-bottom: 1rem;
+}
+.video_container  .video_text_container .video_descrip {
+    align-content: start;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25.2px;
+    color: #747474;
+    word-wrap: break-word;
+}
+/* video style end */
+
+
+.summary .active_summ{
+    display: block;
+}
+.card_list .summary p{
+    padding-top: 20px;
+    position: absolute;
+    font-family: "Outfit", sans-serif;
+    color: #747474;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25.2px;
+    min-width: 512px;
+    text-align: justify;
+}
+/* ================ */
+
+.card_list .card_text_container {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 2rem;
+    padding: 0 3.5rem;
+}
+.card_list h3{
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35.24px;
+    align-items: center;
+    color: #FFFFFF;
+}
+.card_list .category {
+    font-family: "Outfit", sans-serif;
+    color: #747474;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.12px;
+}
+.card_list p {
+    font-family: "Outfit", sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.card_rating p {
+    margin-left: 7px;
+}
+.card_rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* List setction start */
